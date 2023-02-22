@@ -1,0 +1,164 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.menu{
+    width: 100%;
+    height: 15vh;
+    background-color: rgba(153, 152, 152, 0.023);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.invi{
+    background-color: rgb(26, 26, 41);
+    color: rgb(210, 205, 205);
+}
+.c{
+    background-color: rgb(26, 26, 41);
+    color: rgb(210, 205, 205);
+}
+.d{
+    background-color: rgb(26, 26, 41);
+    color: rgb(210, 205, 205);
+}
+
+.title{
+    width: 50%;
+    height: auto;
+    font-size: 30px;
+    font-weight: 900;
+    text-align: start;
+    padding-left: 100px;
+}
+
+.cerca{
+    width: 80%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.cerca input{
+    width: 100%;
+    height: 35px;
+    background-color: transparent;
+    border-radius: 10px;
+    border: 1px solid black;
+}
+
+.list{
+    width: 40%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.toggle{
+    width: 10%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.toggle-click{
+    width: 20px;
+    height: 20px;
+    background-color: red;
+    cursor: pointer;
+}
+
+
+ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    font-size: 16px;
+}
+
+li{
+    list-style: none;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.corpo{
+    width: 100%;
+    height: 85vh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.dibujo{
+    width: 70%;
+    height: 85vh;
+}
+
+img{
+    width: 100%;
+    height: auto;
+}
+.text{
+    width: 100%;
+    height: 85vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 70px;
+}
+.container-text{
+    width: 70%;
+    height: auto;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 30px;
+}
+
+h2{
+    width: 100%;
+    text-align: center;
+    font-size: 45px;
+    font-weight: 900;
+}
+p{
+    font-size: 18px;
+    text-align: center;
+}
+
+.container{
+    height: 200vh;
+}
+
+.button{
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+.flecha{
+    width: 50px;
+    height: 50px;
+    border: none;
+    display: none;
+    background-color: red;
+    position:fixed;
+    bottom: 100px;
+    right: 53px;
+    border-radius: 10px;
+}
+.flecha:hover{
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+

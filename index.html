@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .color{
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <p id="s" >s</p>
+    <button id="but" >click</button>
+
+
+    <script>
+        const s = document.getElementById('s')
+        const but = document.getElementById('but')
+
+        but.addEventListener('click', e => {
+            console.log(e);
+            s.classList.toggle("red")
+            s.innerHTML = ("hhh")
+        })
+
+
+        // program to generate fibonacci series up to n terms
+
+    // take input from the user
+    const number = parseInt(prompt('Enter the number of terms: '));
+    let n1 = 0, n2 = 1, nextTerm;
+
+    console.log('Fibonacci Series:');
+
+    for (let i = 1; i <= number; i++) {
+        console.log(n1);
+        nextTerm = n1 + n2;
+        console.log('te :' + nextTerm);
+        n1 = n2;
+        console.log('n1 :' + n1);
+        n2 = nextTerm;
+        console.log('n2 :' + n2);
+    }
+    </script>
+</body>
+</html>

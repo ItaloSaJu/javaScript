@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="menu " id="toggle">
+        <div class="title">ItaloS.</div>
+        
+        <div class="list">
+            <ul>
+                <li>chi siamo</li>
+                <li>chi siamo</li>
+                <li>chi siamo</li>
+                <li>chi siamo</li>
+            </ul>
+        </div>
+        <div class="toggle"  >
+            <div class="toggle-click"></div>
+        </div>
+    </div>
+    <div class="corpo" id="c">
+        <div class="text">
+            <div class="container-text">
+                <div class="cerca">
+                    <input type="search"></input>
+                </div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde cum quia atque perferendis et facilis officia possimus. Iure quos eum, eaque ut dolor officia sit delectus consequuntur voluptas fugit blanditiis.</p>
+            </div>
+        </div>
+    </div>
+    
+    <button class="flecha" id="fle"> </button>
+
+
+    <div class="container" id="d"></div>
+
+    <script>
+
+        
+        const f = document.getElementById("fle")
+        const to = document.getElementById("toggle")
+        const c = document.getElementById("c")
+        const d = document.getElementById("d")
+
+
+        window.addEventListener('scroll', e =>{
+            const x = window.pageYOffset;
+            console.log(x);
+            console.log(f);
+            if(x >= 350 ){
+                 f.style.display= "flex"
+            }else if(x <= 550 ){
+                 f.style.display= "none"
+            }
+        })
+
+
+        f.addEventListener('click', e =>{
+            document.body.scrollIntoView ( {behavior: "smooth"});
+            
+        })
+
+        to.addEventListener('click', e =>{
+            to.classList.toggle("invi")
+            c.classList.toggle("c")
+            d.classList.toggle("d")
+        })
+
+        
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>
