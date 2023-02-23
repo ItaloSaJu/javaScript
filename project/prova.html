@@ -23,7 +23,7 @@
             <div class="toggle-click"></div>
         </div>
     </div>
-    <div class="corpo" id="c">
+    <div class="corpo" id="toggle">
         <div class="text">
             <div class="container-text">
                 <div class="cerca">
@@ -39,46 +39,6 @@
 
     <div class="container" id="d"></div>
 
-    <script>
-
-        
-        const f = document.getElementById("fle")
-        const to = document.getElementById("toggle")
-        const c = document.getElementById("c")
-        const d = document.getElementById("d")
-
-
-        window.addEventListener('scroll', e =>{
-            const x = window.pageYOffset;
-            console.log(x);
-            console.log(f);
-            if(x >= 350 ){
-                 f.style.display= "flex"
-            }else if(x <= 550 ){
-                 f.style.display= "none"
-            }
-        })
-
-
-        f.addEventListener('click', e =>{
-            document.body.scrollIntoView ( {behavior: "smooth"});
-            
-        })
-
-        to.addEventListener('click', e =>{
-            to.classList.toggle("invi")
-            c.classList.toggle("c")
-            d.classList.toggle("d")
-        })
-
-        
-
-
-
-
-
-
-
-    </script>
+    <script src="script.js"></script>
 </body>
 </html>
