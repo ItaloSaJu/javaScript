@@ -26,7 +26,7 @@
 }
 
 .title{
-    width: 50%;
+    width: 15%;
     height: auto;
     font-size: 30px;
     font-weight: 900;
@@ -35,7 +35,7 @@
 }
 
 .cerca{
-    width: 80%;
+    width: 35%;
     height: 100%;
     display: flex;
     align-items: center;
@@ -52,7 +52,7 @@
 }
 
 .list{
-    width: 40%;
+    width: 35%;
     height: auto;
     display: flex;
     align-items: center;
@@ -60,17 +60,21 @@
     
 }
 .toggle{
-    width: 10%;
+    width: 15%;
     height: auto;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 .toggle-click{
-    width: 20px;
-    height: 20px;
-    background-color: red;
+    width: 40px;
+    height: 40px;
     cursor: pointer;
+    border-radius: 50%;
+    border: 1px solid white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 
@@ -105,7 +109,7 @@ img{
     height: auto;
 }
 .text{
-    width: 100%;
+    width: 30%;
     height: 85vh;
     display: flex;
     align-items: center;
@@ -114,9 +118,8 @@ img{
     padding: 0 70px;
 }
 .container-text{
-    width: 70%;
+    width: 100%;
     height: auto;
-    
     display: flex;
     align-items: center;
     justify-content: center;
@@ -126,18 +129,13 @@ img{
 
 h2{
     width: 100%;
-    text-align: center;
     font-size: 45px;
     font-weight: 900;
 }
 p{
     font-size: 18px;
-    text-align: center;
 }
 
-.container{
-    height: 200vh;
-}
 
 .button{
     width: 100%;
@@ -149,16 +147,87 @@ p{
 .flecha{
     width: 50px;
     height: 50px;
-    border: none;
-    display: none;
-    background-color: red;
+    border-radius: 50%;
+    border: 1px solid black;
+    display: flex;
     position:fixed;
     bottom: 100px;
     right: 53px;
     border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+
 }
 .flecha:hover{
     transform: scale(1.1);
     transition: 0.5s;
+    background-color: black;
 }
 
+.flecha:hover svg{
+    fill: white;
+}
+
+    .container{
+        height: 100vh;
+        width: 70%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .container-image{
+        width: 80%;
+        height: 70%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+    }
+    
+    .container-image .image1{
+        width: 34%;
+        height: 100%;
+        background-image: url(./image/uno.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        border-radius: 5px;
+        transition: 0.5s;
+    }
+    .image1:hover{
+        width: 80%;
+    }
+    .container-image .image2{
+        width: 33%;
+        height: 100%;
+        background-image: url(./image/due.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        border-radius: 5px;
+        transition: 0.5s;
+
+
+    }
+    .image2:hover{
+        width: 80%;
+    }
+    .container-image .image3{
+        width: 33%;
+        height: 100%;
+        background-image: url(./image/tre.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        border-radius: 5px;
+        transition: 0.5s;
+    }
+    .image3:hover{
+        width: 80%;
+    }
+
+
+    .section2{
+        height: 150vh;
+    }
